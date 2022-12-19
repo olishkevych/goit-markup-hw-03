@@ -304,13 +304,16 @@ border-radius: 4px;
   
   flex-basis: calc (100% / 3 - var(--card-set-gap));
 
-  /* flex-basis: 360px;  - так працює*/
-
   margin-left: var(--card-set-gap);
   margin-top: var(--card-top-gap);
-  border:  solid #F4F4FD 0.5px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
   
+}
+
+.card-detail {
+border-bottom:  solid #F4F4FD 0.5px;
+border-left:  solid #F4F4FD 0.5px;
+border-right:  solid #F4F4FD 0.5px;
 }
 
 
