@@ -135,17 +135,17 @@ img {
 .hero {
   text-align: center;
   background-color: var(--main-text-color);
-  padding: 0;
-  /* outline: greenyellow solid 5px; */
+  padding: 192px 0px;
+
 }
 
 .hero-title {
   margin-left: auto;
   margin-right: auto;
   margin-top: 0px;
-  padding-top: 192px;
   width: 492px;
-  /* outline: tomato solid 5px; */
+  padding-bottom: 48px;
+  
   
   font-weight: 600;
   font-size: 56px;
@@ -246,8 +246,8 @@ margin-right: var(--card-set-gap);
 .button.order {
   padding: 16px 32px;
   border-radius: 4px;
-  margin-top: 48px;
-  margin-bottom: 192px;
+  
+  
 
   color: var(--primary-white-color);
   background-color: var(--primary-accent-color);
@@ -265,6 +265,7 @@ display: flex;
 justify-content:center ;
 padding-top: 96px;
 padding-bottom: 24px;
+padding-left: 0;
 }
 
 .button.filter:active {
@@ -360,5 +361,5 @@ background-color: var(--main-text-color);
   width: 264px;
   line-height: 1.5;
   color: var(--footer-text-color);
-  margin-top: 16px;
+  padding-top: 16px;
 }
