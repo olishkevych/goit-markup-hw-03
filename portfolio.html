@@ -19,12 +19,13 @@
   </head>
 
   <body>
-    <header class="container">
+    <header >
+      <div class="container ">
       <nav class="main-nav">
         <a href="./index.html" class="logo">
           <span class="logo-start">WEB</span>STUDIO</a
         >
-
+             
         <ul class="site-nav list">
           <li class="item">
             <a class="link" href="./index.html"> Studio</a>
@@ -34,7 +35,7 @@
           </li>
           <li class="item"><a class="link" href=""> Contacts </a></li>
         </ul>
-
+      </nav>
         <ul class="contacts list">
           <li class="item">
             <a class="link" href="mailto:info@devstudio.com">
@@ -45,136 +46,148 @@
             <a class="link" href="tel:+110001111111"> +11 (000) 111-11-11</a>
           </li>
         </ul>
-      </nav>
+      </div>
     </header>
 
-    
     <main>
-      <section  class="container">
-      <h1 class="visually-hidden">Services</h1>
-      <ul class="filters list">
-        <li><button class="button filter" type="button">All</button></li>
-        <li>
-          <button class="button filter" type="button">Web Site</button>
-        </li>
-        <li>
-          <button class="button filter" type="button">App</button>
-        </li>
-        <li><button class="button filter" type="button">Design</button></li>
-        <li>
-          <button class="button filter" type="button">Marketing</button>
-        </li>
-      </ul>
+      <section>
+        <div class="container portfolio">
+          <h1 class="visually-hidden">Services</h1>
+          <ul class="filters list">
+            <li class="item"><button class="button filter" type="button">All</button></li>
+            <li class="item">
+              <button class="button filter" type="button">Web Site</button>
+            </li>
+            <li class="item">
+              <button class="button filter" type="button">App</button>
+            </li>
+            <li class="item"><button class="button filter" type="button">Design</button></li>
+            <li class="item">
+              <button class="button filter" type="button">Marketing</button>
+            </li>
+          </ul>
 
-      <!--Cards-->
-      
-      <ul class="card-set  list">
-        <li class="item">
-          <img
-            src="./images/banking.jpg"
-            width="360"
-            alt="Banking App interface screenshots"
-          />
-          <div class="card-detail"><h2 class="card-title">Banking App Interface Concept</h2>
-          <p class="card-category">App</p>
-          </div>
-          <p class="card-text"></p>
-        </li>
+          <!--Cards-->
 
-        <li class="item">
-          <img
-            src="./images/pay.jpg"
-            width="360"
-            alt="Cashless payments option"
-          />
-          <div class="card-detail"> <h2 class="card-title">Cashless Payment</h2>
-          <p class="card-category">Marketing</p> </div>
-          <p class=" visually-hidden card-text">
-            14 Stylish and User-Friendly App Design Concepts · Task Manager App
-            · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage
-            App
-          </p>
-        </li>
+          <ul class="card-set list">
+            <li class="item">
+              <img
+                src="./images/banking.jpg"
+                width="360"
+                alt="Banking App interface screenshots"
+              />
+              <div class="card-detail">
+                <h2 class="card-title">Banking App Interface Concept</h2>
+                <p class="card-category">App</p>
+              </div>
+              <p class="card-text"></p>
+            </li>
 
-        <li class="item">
-          <img 
-            src="./images/meditation.jpg"
-           
-            alt="Meditation application screen"
-          />
-          <div class="card-detail"><h2 class="card-title">Meditaion App</h2>
-          <p class="card-category">App</p></div>
-          <p class="card-text"></p>
-        </li>
+            <li class="item">
+              <img
+                src="./images/pay.jpg"
+                width="360"
+                alt="Cashless payments option"
+              />
+              <div class="card-detail">
+                <h2 class="card-title">Cashless Payment</h2>
+                <p class="card-category">Marketing</p>
+              </div>
+              <p class="visually-hidden card-text">
+                14 Stylish and User-Friendly App Design Concepts · Task Manager
+                App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud
+                Storage App
+              </p>
+            </li>
 
-        <li class="item">
-          <img  src="./images/taxi.jpg"  alt="Steering wheel image" />
-          <div class="card-detail"><h2 class="card-title">Taxi Service</h2>
-          <p class="card-category">Marketing</p></div>
-          <p class="card-text"></p>
-        </li>
+            <li class="item">
+              <img
+                src="./images/meditation.jpg"
+                alt="Meditation application screen"
+              />
+              <div class="card-detail">
+                <h2 class="card-title">Meditation App</h2>
+                <p class="card-category">App</p>
+              </div>
+              <p class="card-text"></p>
+            </li>
 
-        <li class="item">
-          <img 
-            src="./images/screens.jpg"
-           
-            alt="Mobile screen designs"
-          />
-          <div class="card-detail"><h2 class="card-title">Screen Illustrations</h2>
-          <p class="card-category">Design</p></div>
-          <p class="card-text"></p>
-        </li>
+            <li class="item">
+              <img src="./images/taxi.jpg" alt="Steering wheel image" />
+              <div class="card-detail">
+                <h2 class="card-title">Taxi Service</h2>
+                <p class="card-category">Marketing</p>
+              </div>
+              <p class="card-text"></p>
+            </li>
 
-        <li class="item">
-          <img 
-            src="./images/courses.jpg"
-            
-            alt="Woman looking at the phone screen"
-          />
-          <div class="card-detail"><h2 class="card-title">Online Courses</h2>
-          <p class="card-category">Marketing</p> </div>
-          <p class="card-text"></p>
-        </li>
+            <li class="item">
+              <img src="./images/screens.jpg" alt="Mobile screen designs" />
+              <div class="card-detail">
+                <h2 class="card-title">Screen Illustrations</h2>
+                <p class="card-category">Design</p>
+              </div>
+              <p class="card-text"></p>
+            </li>
 
-        <li class="item">
-          <img
-            src="./images/instagram.jpg"
-            width="360"
-            alt="Instagram stories examples"
-          />
-          <div class="card-detail"><h2 class="card-title">Instagram Stories Concept</h2>
-          <p class="card-category">Design</p> </div>
-          <p class="card-text"></p>
-        </li>
+            <li class="item">
+              <img
+                src="./images/courses.jpg"
+                alt="Woman looking at the phone screen"
+              />
+              <div class="card-detail">
+                <h2 class="card-title">Online Courses</h2>
+                <p class="card-category">Marketing</p>
+              </div>
+              <p class="card-text"></p>
+            </li>
 
-        <li class="item">
-          <img src="./images/food.jpg" alt="vegetables" />
-          <div class="card-detail"><h2 class="card-title">Organic Food</h2>
-          <p class="card-category">Web Site</p></div>
-          <p class="card-text"></p>
-        </li>
+            <li class="item">
+              <img
+                src="./images/instagram.jpg"
+                width="360"
+                alt="Instagram stories examples"
+              />
+              <div class="card-detail">
+                <h2 class="card-title">Instagram Stories Concept</h2>
+                <p class="card-category">Design</p>
+              </div>
+              <p class="card-text"></p>
+            </li>
 
-        <li class="item">
-          <img src="./images/coffee.jpg" alt="latte art picture" />
-          <div class="card-detail"><h2 class="card-title">Fresh Coffee</h2>
-          <p class="card-category">Web Site</p></div>
-          <p class="card-text"></p>
-        </li>
-      </ul>
-    </section>
+            <li class="item">
+              <img src="./images/food.jpg" alt="vegetables" />
+              <div class="card-detail">
+                <h2 class="card-title">Organic Food</h2>
+                <p class="card-category">Web Site</p>
+              </div>
+              <p class="card-text"></p>
+            </li>
+
+            <li class="item">
+              <img src="./images/coffee.jpg" alt="latte art picture" />
+              <div class="card-detail">
+                <h2 class="card-title">Fresh Coffee</h2>
+                <p class="card-category">Web Site</p>
+              </div>
+              <p class="card-text"></p>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
 
-    <footer class="container page-footer">
-
-      <a href="./index.html" class="logo logo-bottom">
-        <span class="logo-start">WEB</span>STUDIO</a
-      >
-
-      <p class="footer-text">
-        Increase the flow of customers and sales for your business with digital
-        marketing & growth solutions.
-      </p>
-    </footer>
-  </body>
-</html>
-
+    <footer class=" page-footer">
+      <div class="container">
+            <a href="./index.html" class="logo logo-bottom">
+              <span class="logo-start">WEB</span>STUDIO</a
+            >
+      
+            <p class="footer-text">
+              Increase the flow of customers and sales for your business with digital
+              marketing & growth solutions.
+            </p>
+          </div>
+          </footer>
+        </body>
+      </html>

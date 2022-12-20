@@ -79,14 +79,20 @@ img {
 }
 
 /*navigation*/
+header > .container {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 2px solid rgba(46, 47, 66, 0.08);
+}
+
 .main-nav {
   display: flex;
   align-items: center;
   padding: 0;
   margin: 0;
+  }
 
-  box-shadow: 0, 0, 0px 1px 1px rgba(46, 47, 66, 0.16);
-}
 .site-nav {
   display: flex;
   margin-left: 76px;
@@ -98,9 +104,7 @@ img {
 
 .site-nav .link {
   display: block;
-  padding-top: 24px;
-  padding-bottom: 24px;
-
+  
   color: inherit;
   font-weight: 600;
   line-height: 1.5;
@@ -115,19 +119,24 @@ img {
   color: var(--primary-accent-color);
 }
 
+.contacts {
+  display: flex;
+  padding: 0;
+  margin-left: auto;
+}
+
 .contacts .link {
+  display: block;
+  margin: 0;
+
   color: inherit;
   line-height: 1.5;
   text-decoration: none;
 }
 
-.contacts {
-  display: flex;
-  margin-left: auto;
-}
-
 .contacts .item:not(:last-child) {
   margin-right: 40px;
+  
 }
 
 /*hero*/
@@ -159,14 +168,13 @@ img {
   display:flex;
   padding:0;
   margin:0;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
-.features .item {
-  padding-top: 120px;
-  
-}
+
 .features >.item:not(:last-child) {
-  padding-right:24px;
+  margin-right:24px;
 }
   
 
@@ -177,7 +185,7 @@ img {
 }
 
 .feature-txt {
-  margin: 8px 0 0;
+  padding: 8px 0 0;
 
   line-height: 1.5;
   color: var(--secondary-text-color);
@@ -185,8 +193,6 @@ img {
 
 /*sections*/
 .section-ttl {
-  margin: 120px 0 0;
-
   font-weight: 600;
   font-size: 36px;
   line-height: 1.11;
@@ -199,33 +205,40 @@ img {
 /*What are we doing*/
 .category{
   display: flex;
-  padding:72px 0 120px 0;
+  margin:72px 0 120px 0;
 }
 
 .category > .item:not(:last-child) {
-  padding-right: var(--card-set-gap);
+  margin-right: var(--card-set-gap);
  }
 
  /*Team*/
+.team .container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
  .team {
   background-color: var(--secondary-white-color);
    }
 
+   .member-detail {
+    padding: 32px 16px;
+   }
+
  .team .section-ttl{
-  padding-top: 120px;
-  padding-bottom: 72px;
-  margin: 0;
+  margin: 0 0 72px 0;
  }
 
  .team-cards {
   display: flex;
-  padding: 0 0 120px 0;
- }
+  }
 
  .team-cards .item {
+  background-color:  var(--primary-white-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
  }
+
  .team-cards .item:not(:last-child) {
 margin-right: var(--card-set-gap);
  }
@@ -260,12 +273,17 @@ margin-right: var(--card-set-gap);
 }
 
 /* Filters */
+
+.container.portfolio {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
 .filters{
 display: flex;
 justify-content:center ;
-padding-top: 96px;
-padding-bottom: 24px;
-padding-left: 0;
+margin-bottom: 24px;
+margin-left: 0;
 }
 
 .button.filter:active {
@@ -275,7 +293,6 @@ padding-left: 0;
 }
 
 .button.filter {
-margin-right:var(--card-set-gap);
 padding: 12px 24px;
 
 color: var(--primary-accent-color);
@@ -284,10 +301,9 @@ border: 1px solid #E7E9FC;
 border-radius: 4px;
 }
 
-.button.filter::last-child {
-  margin-right:0;
+.filters .item:not(:last-child) {
+  margin-right: var(--card-set-gap);
 }
-
 /*cards*/
 
 .card-set{
@@ -302,7 +318,6 @@ border-radius: 4px;
 }
 
 .card-set > .item {
-  
   flex-basis: calc (100% / 3 - var(--card-set-gap));
 
   margin-left: var(--card-set-gap);
@@ -312,6 +327,7 @@ border-radius: 4px;
 }
 
 .card-detail {
+padding: 32px 16px;
 border-bottom:  solid #F4F4FD 0.5px;
 border-left:  solid #F4F4FD 0.5px;
 border-right:  solid #F4F4FD 0.5px;
@@ -319,10 +335,7 @@ border-right:  solid #F4F4FD 0.5px;
 
 
 .card-title {
-  padding-top: 32px;
-  padding-left: 16px;
-  padding-bottom: 8px;
-
+  margin-bottom: 8px;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
@@ -330,10 +343,7 @@ border-right:  solid #F4F4FD 0.5px;
 }
 
 .card-category {
-  margin: 0;
-  padding-bottom: 32px;
-  padding-left: 16px;
-
+ 
   font-size: 16px;
   line-height: 1.5;
   color: var(--secondary-text-color);
@@ -361,5 +371,5 @@ background-color: var(--main-text-color);
   width: 264px;
   line-height: 1.5;
   color: var(--footer-text-color);
-  padding-top: 16px;
+  margin-top: 16px;
 }
