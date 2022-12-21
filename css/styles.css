@@ -88,7 +88,11 @@ header > .container {
   display: flex;
   padding-top: 24px;
   padding-bottom: 24px;
-  border-bottom: 2px solid rgba(46, 47, 66, 0.08);
+  
+}
+
+header {
+border-bottom: 1px solid rgba(46, 47, 66, 0.08);
 }
 
 .main-nav {
@@ -166,12 +170,18 @@ header > .container {
 }
 
 /*features*/
+
+.features-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+}
+
 .features {
   display: flex;
   padding: 0;
   margin: 0;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  
 }
 
 .features > .item:not(:last-child) {
@@ -202,9 +212,14 @@ header > .container {
 }
 
 /*What are we doing*/
+.category-section {
+  padding-bottom: 120px;
+}
+
 .category {
   display: flex;
-  margin: 72px 0 120px 0;
+  margin: 72px 0 0 0;
+  padding: 0;
 }
 
 .category > .item:not(:last-child) {
@@ -212,12 +227,10 @@ header > .container {
 }
 
 /*Team*/
-.team .container {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
 .team {
   background-color: var(--secondary-white-color);
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .member-detail {
@@ -230,6 +243,8 @@ header > .container {
 
 .team-cards {
   display: flex;
+  padding: 0;
+  margin: 0;
 }
 
 .team-cards .item {
@@ -272,7 +287,7 @@ header > .container {
 
 /* Filters */
 
-.container.portfolio {
+.portfolio {
   padding-top: 96px;
   padding-bottom: 120px;
 }
@@ -280,7 +295,7 @@ header > .container {
 .filters {
   display: flex;
   justify-content: center;
-  margin-bottom: 24px;
+  margin-bottom: 72px;
   margin-left: 0;
 }
 
